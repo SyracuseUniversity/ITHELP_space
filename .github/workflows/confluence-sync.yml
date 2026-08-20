@@ -22,6 +22,19 @@ concurrency:
   group: confluence-sync
   cancel-in-progress: false
 
+# NOTE: no `permissions:` block here on purpose.
+#
+# The SyracuseUniversity org sets default GITHUB_TOKEN permissions to read-only,
+# and a repo cannot elevate above the org ceiling -- requesting contents: write
+# would simply be denied, and the push would fail with a confusing 403.
+#
+# Instead this workflow pushes over SSH using a deploy key scoped to this single
+# repo. Generate with:
+#     ssh-keygen -t ed25519 -C "confluence-sync" -f confluence-sync-key -N ""
+# Add confluence-sync-key.pub under Settings -> Deploy keys (check "Allow write
+# access"), add the private key as the secret SSH_DEPLOY_KEY, then delete both
+# local files.
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -43,6 +56,8 @@ jobs:
       - name: Export Confluence spaces
         env:
           CONFLUENCE_BASE: ${{ vars.CONFLUENCE_BASE }}
+          # Required for scoped API tokens; leave the variable unset for classic tokens.
+          CONFLUENCE_CLOUD_ID: ${{ vars.CONFLUENCE_CLOUD_ID }}
           CONFLUENCE_EMAIL: ${{ secrets.CONFLUENCE_EMAIL }}
           CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
           SPACE_KEYS: ${{ vars.SPACE_KEYS }}

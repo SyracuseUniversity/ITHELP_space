@@ -20,6 +20,8 @@ Design notes
 Environment variables
 ---------------------
 CONFLUENCE_BASE    https://<site>.atlassian.net      (required)
+CONFLUENCE_CLOUD_ID  cloud ID -- REQUIRED for scoped API tokens, omit for
+                     classic unscoped tokens. See notes on API_ROOT below.
 CONFLUENCE_EMAIL   account email for the API token   (required)
 CONFLUENCE_TOKEN   Atlassian API token               (required)
 SPACE_KEYS         comma-separated space keys        (required)
@@ -40,7 +42,6 @@ import sys
 import time
 import unicodedata
 from pathlib import Path
-from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -72,6 +73,7 @@ def _env_bool(name: str, default: bool) -> bool:
 
 
 BASE = _env("CONFLUENCE_BASE", required=True).rstrip("/")
+CLOUD_ID = _env("CONFLUENCE_CLOUD_ID", "").strip()
 EMAIL = _env("CONFLUENCE_EMAIL", required=True)
 TOKEN = _env("CONFLUENCE_TOKEN", required=True)
 SPACE_KEYS = [k.strip() for k in _env("SPACE_KEYS", required=True).split(",") if k.strip()]
@@ -81,7 +83,20 @@ FETCH_LABELS = _env_bool("FETCH_LABELS", True)
 REQUEST_DELAY = float(_env("REQUEST_DELAY", "0.15"))
 FORCE_FULL = _env_bool("FORCE_FULL", False)
 
-API = f"{BASE}/wiki/api/v2"
+# Two different roots, deliberately kept separate:
+#
+#   API_ROOT -- where requests go. Scoped API tokens MUST use the
+#               api.atlassian.com gateway and will 401 against the site URL.
+#               Classic (unscoped) tokens use the site URL directly.
+#   BASE     -- the human-facing site URL. Always used for source_url in
+#               frontmatter and for absolutizing image/link hrefs, because
+#               those are for browsers, not for the API.
+#
+# Set CONFLUENCE_CLOUD_ID to switch to gateway mode. Find it at:
+#   https://<site>.atlassian.net/_edge/tenant_info
+API_ROOT = f"https://api.atlassian.com/ex/confluence/{CLOUD_ID}" if CLOUD_ID else BASE
+API = f"{API_ROOT}/wiki/api/v2"
+
 MAX_RETRIES = 5
 MAX_SLUG_LEN = 60
 
@@ -150,7 +165,10 @@ def paginate(session: requests.Session, url: str, params: dict | None = None):
         nxt = (payload.get("_links") or {}).get("next")
         if not nxt:
             break
-        payload = api_get(session, urljoin(BASE, nxt))
+        # `next` is a root-relative path beginning with /wiki. Concatenate onto
+        # API_ROOT -- do NOT use urljoin here: an absolute path would replace
+        # the /ex/confluence/{cloudId} prefix and silently break gateway mode.
+        payload = api_get(session, nxt if nxt.startswith("http") else API_ROOT + nxt)
 
 
 # --------------------------------------------------------------------------
@@ -358,6 +376,14 @@ def prune_orphans(space_keys: list[str], kept: set[Path]) -> int:
 
 
 def main() -> int:
+    if CLOUD_ID:
+        log.info("Gateway mode (scoped token): %s", API_ROOT)
+    else:
+        log.info(
+            "Site mode (classic token): %s -- if this 401s, your token is scoped; "
+            "set CONFLUENCE_CLOUD_ID.", API_ROOT
+        )
+
     session = make_session()
 
     spaces = resolve_spaces(session, SPACE_KEYS)
