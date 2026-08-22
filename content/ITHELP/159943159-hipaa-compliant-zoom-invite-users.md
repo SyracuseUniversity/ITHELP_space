@@ -4,8 +4,8 @@ confluence_id: "159943159"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159943159/HIPAA+Compliant+Zoom+Invite+Users"
-version: 6
-last_modified: "2026-07-30T19:06:02.750Z"
+version: 7
+last_modified: "2026-08-21T14:30:30.924Z"
 status: "current"
 parent_id: "159943131"
 ---
@@ -33,7 +33,7 @@ This new process is assigning users with an email address of '**<netid>+shz@syr.
 
 **Request New Users into the HIPAA system**
 
-To have users added into the HIPAA Zoom system, the Zoom group owners can send an email to [ols@su-jsm.atlassian.net](mailto:ols@su-jsm.atlassian.net) with a list of the Netids they would like invited and state the group name the users will be added to.
+To have users added into the HIPAA Zoom system, the Zoom group owners can send an email to [ols@su-jsm.atlassian.net](mailto:ols@su-jsm.atlassian.net) with a list of the Netids and legal name (netID, Firstname, Lastname) they would like invited and state the group name the users will be added to.
 
 **Zoom Administrators Email Users**
 
