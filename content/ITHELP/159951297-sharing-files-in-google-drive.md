@@ -4,8 +4,8 @@ confluence_id: "159951297"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159951297/Sharing+Files+in+Google+Drive"
-version: 27
-last_modified: "2024-08-12T14:24:36.867Z"
+version: 28
+last_modified: "2026-08-24T16:55:00.560Z"
 status: "current"
 parent_id: "159940652"
 labels:
@@ -43,7 +43,9 @@ There are many ways to collaborate and share files amongst users with your g.syr
 
 Shared Drives can **only be requested by a Faculty member, or related IT support person on behalf of a Faculty person**, and must have an academic purpose.
 
-Shared Drives provide a centralized workspace to share and collaborate on documents, separate from your My Drive. A Faculty member, or IT Support person on behalf of the Faculty person, can request Shared Drives with the following form: <https://su-jsm.atlassian.net/servicedesk/customer/portal/22/group/365/create/763>
+Shared Drives provide a centralized workspace to share and collaborate on documents, separate from your My Drive. A Faculty member, or IT Support person on behalf of the Faculty person, can request Shared Drives with the following form:
+
+<https://support.atlassian.syr.edu/servicedesk/customer/portal/22/group/1079/create/763>
 
 ### Shared Drive Permissions
 
