@@ -4,8 +4,8 @@ confluence_id: "159941534"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159941534/Remote+Desktop+Services+RDS"
-version: 132
-last_modified: "2026-08-07T18:29:15.702Z"
+version: 134
+last_modified: "2026-08-28T16:13:41.587Z"
 status: "current"
 parent_id: "159942121"
 labels:
@@ -61,7 +61,7 @@ To maintain security and system performance, idle RDS sessions will be signed ou
 
 ---
 
-Pre-Installed programs and applications on Syracuse University Windows 10 images:
+Pre-Installed programs and applications on Syracuse University Windows 11 images:
 
 | **Syracuse University Academic** |
 | --- |
@@ -81,6 +81,7 @@ Pre-Installed programs and applications on Syracuse University Windows 10 images
 | ImageJ |
 | MathCAD Prime |
 | Mathematica |
+| Mathworks Matlab |
 | Microsoft 365 Apps for enterprise |
 | Microsoft PowerBI Desktop |
 | Microsoft Project Pro |
