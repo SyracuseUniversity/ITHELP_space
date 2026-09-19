@@ -4,8 +4,8 @@ confluence_id: "159940652"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159940652/Syracuse+University+Google+Workspace+for+Education+Service"
-version: 92
-last_modified: "2026-06-16T14:14:18.707Z"
+version: 93
+last_modified: "2026-09-18T19:42:18.497Z"
 status: "current"
 parent_id: "159941299"
 labels:
@@ -18,6 +18,8 @@ labels:
 Google Workspace for Education is a set of Google tools and services that are tailored for schools to collaborate, streamline instruction, and keep learning safe. Syracuse University maintains an organizational account, for Syracuse University, in the Google Workspace for Education services.   The Syracuse University Google Workspace for Education service (formally known as Google Apps, or G Suite for Education) is managed by the Information Technology Services (ITS) department. This organizational account provides current SU and ESF students, faculty, and staff with a wide array of Google cloud-based services and tools in support of the Academic needs of teaching and learning, and for academic research. A list of Google services and products available through the Syracuse University Google Workspace for Education service user accounts, can be viewed at [Services available for Syracuse University's Google Workspace](https://answers.atlassian.syr.edu/wiki/spaces/ITHELP/pages/159940652/Syracuse+University+Google+Workspace+for+Education+Service#GWSServicesTools).
 
 The Syracuse University Google Workspace for Education service domain is [g.syr.edu](http://g.syr.edu).
+
+**Note:** SU Guest/Sponsored accounts are not automatically provisioned for Google Workspace. Reach out directly to the [CDI Apps](https://support.atlassian.syr.edu/servicedesk/customer/portal/22/group/366/create/924) team for assistance.
 
 **Google Workspace - Changes to Storage Limits**
 
