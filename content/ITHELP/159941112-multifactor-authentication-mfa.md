@@ -4,8 +4,8 @@ confluence_id: "159941112"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159941112/Multifactor+Authentication+MFA"
-version: 138
-last_modified: "2026-06-17T15:24:18.944Z"
+version: 143
+last_modified: "2026-09-30T19:09:45.422Z"
 status: "current"
 parent_id: "159940932"
 labels:
@@ -19,65 +19,90 @@ labels:
   - "multifactor"
 ---
 
-## Overview
+[ [What is multifactor authentication?](#MultifactorAuthentication(MFA)-Whatismultifactorauthentication?) ] [ [Sign-in methods](#MultifactorAuthentication(MFA)-Sign-inmethods) ] [ [Set up Microsoft Authenticator](#MultifactorAuthentication(MFA)-SetupMicrosoftAuthenticator) ] [ [How signing in works after setup](#MultifactorAuthentication(MFA)-Howsigninginworksaftersetup) ] [ [Set up a passkey](#MultifactorAuthentication(MFA)-Setupapasskey) ] [ [Got a new phone?](#MultifactorAuthentication(MFA)-Gotanewphone?) ] [ [Traveling](#MultifactorAuthentication(MFA)-Traveling) ] [ [Manage your sign-in methods](#MultifactorAuthentication(MFA)-Manageyoursign-inmethods) ] [ [Getting help](#MultifactorAuthentication(MFA)-Gettinghelp) ]
 
----
+## What is multifactor authentication?
 
-Multifactor Authentication (MFA) is currently enabled for **all** Syracuse University Faculty, Staff, and Students accessing SUMail, Office365, MySlice, Blackboard, Syracuse University Zoom, Google Workspace, Kaltura Videos (video.syr.edu), and many other web-based applications.
+Multifactor authentication (MFA) adds a second step when you sign in. After you enter your NetID and password, you verify your identity using something you have with you, like your phone or a security key. This prevents someone else from using your account even if they know your password.
 
-MFA is an added verification step during authentication that helps to prevent the unauthorized use of NetIDs and passwords by ensuring that only the account owners themselves can access their account.
+MFA is required for all Syracuse University accounts.
 
-Commonly described as two-step, two-factor, or “something you know and something you have.” In this analogy, “something you know” refers to your NetID and password and “something you have” is a timed, unique code generated just for you.
+## Sign-in methods
 
-## On This Page
+Syracuse University supports several ways to verify your identity. You need at least one set up on your account.
 
----
+| Method | How it works | What you need |
+| --- | --- | --- |
+| **Microsoft Authenticator** (recommended) | A notification pops up on your device. You match a number and tap to approve. | Phone or tablet (iPhone, Android, or iPad) |
+| **Passkey** | Your device verifies you with Face ID, fingerprint, or screen lock. Nothing to type. | A device with biometrics or a PIN (most modern phones, laptops, and tablets) |
+| **Security key** | You plug in or tap a small hardware key when prompted. | A FIDO2-compatible security key (such as a YubiKey) |
 
-- [Configuring Your Account](#MultifactorAuthentication(MFA)-ConfiguringYourAccount)
-- [Traveling with MFA](#MultifactorAuthentication(MFA)-TravelingwithMFA)
+## Set up Microsoft Authenticator
 
----
+Setup is easiest when you have both a computer and your phone in front of you. You will scan a QR code from your computer screen with your phone.
 
----
+1. Download Microsoft Authenticator from the [App Store (iPhone/iPad)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458) or [Google Play (Android)](https://play.google.com/store/apps/details?id=com.azure.authenticator)
+2. On your computer, go to [mfa.syr.edu](https://mfa.syr.edu) and sign in
+3. Select **Add sign-in method**, then choose **Authenticator app**
 
-### Configuring Your Account
+   ![Screenshot 2026-09-30 142454.png](https://answers.atlassian.syr.edu/wiki/download/attachments/159941112/Screenshot%202026-09-30%20142454.png?api=v2)
+4. Follow the on-screen steps. When asked to add an account in the app, choose **Work or School**
 
----
+   ![2.png](https://answers.atlassian.syr.edu/wiki/download/attachments/159941112/2.png?api=v2)
+5. Scan the QR code shown on your computer screen with the Authenticator app
 
-#### Setting up the Microsoft Authenticator App
+   ![3.png](https://answers.atlassian.syr.edu/wiki/download/attachments/159941112/3.png?api=v2)
+6. Approve the test notification sent to your device. Once verified, you are all set.
 
-[First time set-up for Microsoft Multifactor Authentication](https://answers.atlassian.syr.edu/wiki/spaces/ITHELP/pages/159941168/First+time+setup+for+Microsoft+Multifactor+Authentication)
+   ![4.png](https://answers.atlassian.syr.edu/wiki/download/attachments/159941112/4.png?api=v2)
 
-#### Using the Microsoft Authenticator App
+Microsoft Authenticator also works on tablets, including iPads and Android tablets.
 
-[Using the Microsoft Authenticator Mobile Application](https://answers.atlassian.syr.edu/wiki/spaces/ITHELP/pages/159942675/Using+the+Microsoft+Authenticator+Mobile+Application)
+### How signing in works after setup
 
-#### Modify Existing Multi-factor Authentication
+After you set up Authenticator, here is what happens when you sign in:
 
-Manage or update your authentication settings at [mfa.syr.edu](http://mfa.syr.edu/)
+1. Enter your NetID and password as usual
+2. A two-digit number appears on your sign-in screen
 
-### Traveling with MFA
+   ![Screenshot 2026-09-30 145353.png](https://answers.atlassian.syr.edu/wiki/download/attachments/159941112/Screenshot%202026-09-30%20145353.png?api=v2)
+3. Open the notification from Authenticator on your phone or tablet
+4. Type the matching number into the app and tap **Approve**
 
----
+   ![Image.jpg](https://answers.atlassian.syr.edu/wiki/download/attachments/159941112/Image.jpg?api=v2)
 
-If you are traveling and need to access your MFA protected Syracuse University accounts, be sure to configure authentication methods you will have available prior to traveling. [Syracuse Abroad](https://suabroad.syr.edu/) students should configure their MFA as soon as possible.
+This number matching step confirms the sign-in request actually came from you.
 
-Configuring the [Microsoft Authenticator App](https://answers.atlassian.syr.edu/wiki/spaces/ITHELP/pages/159941168/First+time+setup+for+Microsoft+Multifactor+Authentication) before you leave enables your access to protected University accounts regardless of location. Students should ensure their authentication methods function correctly and should be sure to have their configured mobile app when they go abroad.
+## Set up a passkey
 
-#### No Methods Available While Traveling or Abroad?
+A passkey lets your device verify your identity using Face ID, a fingerprint, or your screen lock. There is no code to type and nothing to approve on a second device.
 
-If you have any limitations which prohibit the use of the Microsoft Authenticator App methods while traveling, please contact the [ITS Help Desk](http://its.syr.edu/supportsvc)
+1. Go to [mfa.syr.edu](https://mfa.syr.edu) and sign in
+2. Select **Add sign-in method**
+3. Choose **Passkey in Microsoft Authenticator** or **Security key**
+4. Follow the prompts on your device to complete registration
 
----
+For step-by-step instructions, see Microsoft's guide: [Register a passkey](https://support.microsoft.com/en-us/accounts-billing/security/create-save-passkey)
 
----
+## Got a new phone?
 
-## Getting Support
+If you replaced your phone and Authenticator is no longer working, see [New Phone and the Authenticator App Isn't Working?](https://answers.atlassian.syr.edu/wiki/spaces/ITHELP/pages/299630762/New+Phone+and+the+Authenticator+App+Isn+t+Working) for steps to restore access.
 
----
+To avoid this in the future, register a second sign-in method as a backup (like a passkey on your laptop). That way you can still sign in and set up Authenticator again on your new phone without calling the help desk.
 
-If you got a new phone and are having issues with MFA, visit <https://answers.atlassian.syr.edu/wiki/x/qgDcEQ>
+## Traveling
 
-For support of the information above, contact the [ITS Help Desk](http://its.syr.edu/supportsvc) at 315-443-2677,  [help@syr.edu](mailto:help@syr.edu), or visiting the ITS Service Center ([Location and hours of Operation](https://its.syr.edu/its_service_center/)).
+Set up your sign-in method before you leave. Microsoft Authenticator can generate verification codes even without an internet or cell connection, so it works abroad.
 
-**Faculty and staff** are highly encouraged to begin support by contacting their [academic](https://its.syr.edu/contact_its/school-and-college-support-contact-information/) or [administrative](https://its.syr.edu/contact_its/departmental-support-contact-information/) support personnel.
+[Syracuse Abroad](https://suabroad.syr.edu/) students should make sure their sign-in methods are working before departure.
+
+If you have a situation that prevents you from using any of the methods listed on this page while traveling, contact the [ITS Service Center](https://its.syr.edu/its_service_center/) before your trip.
+
+## Manage your sign-in methods
+
+Add, change, or remove your verification methods at any time at [mfa.syr.edu](https://mfa.syr.edu).
+
+## Getting help
+
+- **ITS Service Center:** 315-443-2677 | [help@syr.edu](mailto:help@syr.edu) | [Location and hours](https://its.syr.edu/its_service_center/)
+- **Faculty and staff:** Contact your [academic](https://its.syr.edu/contact_its/school-and-college-support-contact-information/) or [administrative](https://its.syr.edu/contact_its/departmental-support-contact-information/) support team for hands-on help
