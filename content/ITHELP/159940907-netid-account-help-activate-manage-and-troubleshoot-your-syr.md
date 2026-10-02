@@ -4,8 +4,8 @@ confluence_id: "159940907"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159940907/NetID+Account+Help+Activate+Manage+and+Troubleshoot+Your+Syracuse+University+NetID"
-version: 134
-last_modified: "2026-09-30T02:31:35.103Z"
+version: 135
+last_modified: "2026-10-01T16:41:39.542Z"
 status: "current"
 parent_id: "159940932"
 labels:
@@ -85,27 +85,9 @@ Check your spam or junk folder for the confirmation email. If you still cannot l
 
 ## Password management
 
-All NetID owners are required to change their password at least once per year.
+SU NetID passwords do not expire. If you have forgotten your password, you can visit [netid.syr.edu](http://netid.syr.edu), select “Forgot Your Password” to reset it.
 
-- Email reminders begin 30 days before your password expires.
-- If your password expires, your NetID is disabled and you lose access to resources that require your NetID and password.
-- More information is available in the [Password Change FAQ](https://su-jsm.atlassian.net/wiki/x/i4CICQ).
-
-### Password disabled or expired?
-
-If you know your current password, go to [netid.syr.edu](http://netid.syr.edu), select “Password Expired?”, and use the code sent to the mobile phone or alternate email you set up for recovery.
-
-If you cannot manage your NetID online, contact the [ITS Help Desk](http://its.syr.edu/supportsvc).
-
-### Forgot your NetID or password?
-
-Start at the [NetID Self-Service page](http://netid.syr.edu/). If you still need help, contact the [ITS Help Desk](http://its.syr.edu/supportsvc).
-
-### Email support limitations
-
-ITS support staff cannot make changes to user accounts by email request. If you cannot manage your account online, support staff will need to speak with you directly at 315.443.2677.
-
-ITS can accommodate users who are unable to contact support by voice through remote conferencing tools such as Zoom, Microsoft Teams, or Blackboard Collaborate.
+If you receive a message that your account is locked, try waiting 1 hour and then log in again as these are usually temporary lockouts due to an incorrect password being entered. If you have waited more than an hour and cannot log in, please contact the ITS Help Desk at 315-443-2677 or [help@syr.edu](mailto:help@syr.edu)
 
 ---
 

@@ -4,8 +4,8 @@ confluence_id: "1430126614"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/1430126614/AppArmor+FAQ"
-version: 1
-last_modified: "2026-09-23T18:08:04.217Z"
+version: 2
+last_modified: "2026-10-01T13:04:38.052Z"
 status: "current"
 parent_id: "159941299"
 ---
@@ -45,10 +45,6 @@ Nothing displays. This is expected, vendor-confirmed behavior, not a bug.
 ## Can a missed alert reach a user after the fact?
 
 Yes, but only if "Queue Notifications for Disconnected Devices" is enabled in the admin console and the alert is still active when the user logs back in.
-
-## When is the campus-wide rollout happening?
-
-We're on track to move into broader distribution soon.
 
 ## What do I need to do to prepare?
 
