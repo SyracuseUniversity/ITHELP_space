@@ -4,13 +4,15 @@ confluence_id: "159942300"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159942300/What+a+Student+Sees"
-version: 24
-last_modified: "2025-07-30T14:23:51.917Z"
+version: 25
+last_modified: "2026-10-08T17:59:08.979Z"
 status: "current"
 parent_id: "159942283"
 ---
 
-Some tiles and items under the tiles have more precise access requirements, such as career, campus, and active registration.  The content for new incoming students is limited until 28 days prior to the start of their term of matriculation, such as access to their class schedule.
+Some tiles and items under the tiles have more precise access requirements, such as career, campus, and active registration.
+
+MySlice student content for new incoming students turns on at term activation. Graduate and Law students get more access at that point. Undergraduate content stays limited until 49 days before the term begins. See the Registrar's [Term Activation and Provisioning](https://sumailsyr.sharepoint.com/sites/registrar-information-for-faculty-and-staff/SitePages/Terms,-Term-Activation,-and-Provisioning.aspx) page for current dates." New Student registration appointments are often even closer to the start of their future term.
 
 Please note the content of MySlice evolves on a regular basis, so it is not practical to illustrate all variations.
 
