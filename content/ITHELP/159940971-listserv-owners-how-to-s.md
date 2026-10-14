@@ -4,8 +4,8 @@ confluence_id: "159940971"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159940971/Listserv+Owners+How-To+s"
-version: 56
-last_modified: "2025-11-06T16:58:08.377Z"
+version: 58
+last_modified: "2026-10-13T18:16:27.995Z"
 status: "current"
 parent_id: "159940753"
 ---
@@ -18,6 +18,7 @@ Below you will find instructions to common Listserv list owner tasks. Owners loo
 
 - [Listserv List Management Interface](#ListservOwnersHow-To's-ListservListManagementInterface)
 - [Listserv Security](#ListservOwnersHow-To's-ListservSecurity)
+- [Email Commands for List Owners](#ListservOwnersHow-To's-EmailCommandsforListOwners)
 - [General List Management](#ListservOwnersHow-To's-GeneralListManagement)
   - [Add an Owner to Your List](#ListservOwnersHow-To's-AddanOwnertoYourList)
   - [Managing Messages to List Owners](#ListservOwnersHow-To's-ManagingMessagestoListOwners)
@@ -54,6 +55,12 @@ Listserv controls access with an email address/password combination that it mana
 While we commonly say that a person (yourself!) owns a list, lists are actually owned by an email address(es). Therefore, when your email address changes, you will likely lose the ability to manage your list (you may still be able to login using your old email address and password, but if Listserv asks for email confirmation of a command- which it does for the most sensitive operations- you will be unable to complete the confirmation).
 
 Bottom line, your email address and associated Listserv password are the key to managing your list, and should be guarded like any other personal account. YOU CANNOT GIVE YOUR PASSWORD TO ANOTHER PERSON in order to transfer list ownership. Note that this is also true for subscribers and their ability to manage their subscriptions.
+
+---
+
+## Email Commands for List Owners
+
+List owners who prefer to manage LISTSERV tasks by email can reference <https://su-jsm.atlassian.net/servicedesk/customer/portal/286/article/1467285516> for available commands, usage guidance, and troubleshooting tips.
 
 ---
 
