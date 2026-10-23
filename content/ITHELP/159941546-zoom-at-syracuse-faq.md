@@ -4,8 +4,8 @@ confluence_id: "159941546"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159941546/Zoom+at+Syracuse+FAQ"
-version: 144
-last_modified: "2026-07-23T13:17:17.330Z"
+version: 145
+last_modified: "2026-10-22T15:17:58.743Z"
 status: "current"
 parent_id: "159948565"
 labels:
@@ -250,7 +250,7 @@ Departments may remove access anytime after the effective date of retirement or 
 
 ### **When will I have access to all of the Zoom marketplace applications?**
 
-At this time, we are reviewing the integration of enterprise applications in support to the University's [Academic Strategic Plan](https://academicaffairs.syracuse.edu/about/asp/) and Mike Haynie's COVID-19 Task Force.  Submit requests for marketplace applications to [help@syr.edu](mailto:help@syr.edu).  
+At this time, we are reviewing the integration of enterprise applications in support to the University's [Academic Strategic Plan](https://academicaffairs.syracuse.edu/about/asp/).  Submit requests for marketplace applications to [help@syr.edu](mailto:help@syr.edu).  
 
  
 
