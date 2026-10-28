@@ -4,8 +4,8 @@ confluence_id: "159941834"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159941834/Clearing+Browser+History+and+Cache+in+Safari"
-version: 10
-last_modified: "2026-06-08T17:49:30.617Z"
+version: 11
+last_modified: "2026-10-27T15:03:59.218Z"
 status: "current"
 parent_id: "159942040"
 ---
@@ -31,7 +31,7 @@ You can remove all records that Safari keeps of where you’ve browsed during a 
 
 ## Clear the history and cookies from Safari on your iPhone, iPad, or iPod touch
 
-1. Go to Settings > Safari, and tap Clear History and Website Data. Clearing your history, cookies, and browsing data from Safari **won't change** your AutoFill information.
+1. Go to Settings > Apps > Safari, and tap Clear History and Website Data. Clearing your history, cookies, and browsing data from Safari **won't change** your AutoFill information.
 
 ---
 
