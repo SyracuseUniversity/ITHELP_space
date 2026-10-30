@@ -4,8 +4,8 @@ confluence_id: "159941492"
 space_key: "ITHELP"
 space_name: "Information Technology Support"
 source_url: "https://su-jsm.atlassian.net/wiki/spaces/ITHELP/pages/159941492/Securing+SUMail+After+A+Security+Lock"
-version: 32
-last_modified: "2026-06-09T20:08:38.377Z"
+version: 33
+last_modified: "2026-10-29T13:06:14.000Z"
 status: "current"
 parent_id: "159941384"
 labels:
@@ -68,17 +68,11 @@ When sending this document link to someone whose account has been locked by Secu
 
 ### Check your MFA options
 
-To ensure that no additional authentication methods were added to your account follow these steps to verify while still in the email interface:
+To ensure that no additional authentication methods were added to your account, visit <https://mfa.syr.edu/>
 
-1. Go to the icon in the top right of the window with your initials and choose "view account"
+Verify there are no new and unrecognized authentication methods listed for the account. If additional methods are listed you can remove the authentication methods using the "Delete" option to the left of the list items. 
 
-   ![](https://answers.atlassian.syr.edu/wiki/download/attachments/159941492/View%20account.png?api=v2)
-2. Use the "Update Info" option under the security info tile 
-
-   ![](https://answers.atlassian.syr.edu/wiki/download/attachments/159941492/security%20info.png?api=v2)
-3. Verify there are no new and unrecognized authentication methods listed for the account. If additional methods are listed you can remove the authentication methods using the "Delete" option to the left of the list items. 
-
-   ![](https://answers.atlassian.syr.edu/wiki/download/attachments/159941492/authentication%20method%20list.png?api=v2)
+![](https://answers.atlassian.syr.edu/wiki/download/attachments/159941492/authentication%20method%20list.png?api=v2)
 
 [Return to Top](https://answers.atlassian.syr.edu/wiki/spaces/ITHELP/pages/159941492/Securing+SUMail+After+A+Security+Lock#top)
 
